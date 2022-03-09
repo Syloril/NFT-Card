@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+hr {
+   border: none;
+   background-color: hsl(215, 32%, 27%);
+   color: hsl(215, 32%, 27%); 
+   height: 1px;
+   margin-top: 3.5em;
+}
+
+.container { 
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    padding: 18px;
+    border-radius: 17px;
+    text-align: left;
+    margin: 0 1em;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+}
+
+.card .nft {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1em;
+}
+
+.mouse-over {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 93%;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1em;
+    opacity: 0%;
+    transition: .3s ease;
+    background-color: hsl(178, 100%, 50%);
+}
+
+.mouse-over:hover .overlay {
+    opacity: .25;
+}
+
+.view {
+    color: hsl(0, 0%, 100%);
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0%;
+    transition: .3s ease;
+}
+
+.mouse-over:hover .view {
+    opacity: 1;
+}
+
+.description {
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    margin: 1em 0;
+}
+
+.price {
+    width: 100%;
+}
+
+.col {
+    display: block;
+}
+
+.price-tag {
+    float: left;
+    width: 50%;
+}
+
+.time {
+    float: right;
+    width: 50%;
+}
+
+.col img {
+    vertical-align: middle;
+    padding-bottom: 3px;
+    margin-right: 8px;
+    height: 1em;
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.time-remaining {
+    margin-left: 52.5px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+.card .profile {
+    width: 10%;
+    display: inline-block;
+    border-radius: 200px;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.credits {
+    vertical-align: middle;
+    color: hsl(215, 51%, 70%);
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.creator {
+    color: hsl(0, 0%, 100%);
+}
+
+.creator:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%, -50%);
+    margin-top: 1em;
+    color: hsl(0, 0%, 100%);
+}
